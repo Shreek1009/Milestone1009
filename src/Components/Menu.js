@@ -1,42 +1,75 @@
-import React from 'react'
+import React from 'react';
 
 const Menu = () => {
   return (
     <>
-    <h1>Menu</h1>
-    <div className='container'>
-    <div className="row">
-            <div className="col">
-            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                alt="">
-            </img>
-            <h3>Italian Pizza</h3>
-            <p>$99.00</p>
+      <h1>Menu</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div className="card">
+              <img
+                src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/04/neer-dosa-recipe-easy-2-1.jpg"
+                alt="Indian Food 1"
+                className="menu-image"
+              />
+              <h3>Neer Dosa</h3>
+              <p>$8.99</p>
             </div>
-            <div className="col">
-            <img src="https://th.bing.com/th/id/OIP.Mjm7tV7NqarH17g1X3WkzwHaE1?w=277&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                alt="">
-            </img>
-            <h3>Pepporoni Pizza</h3>
-            <p>$99.00</p>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img
+                src="https://sapanarestaurant.com/wp-content/uploads/2019/11/idli-sambar-900x600.jpg"
+                alt="Indian Food 2"
+                className="menu-image"
+              />
+              <h3>Idli Sambar</h3>
+              <p>$7.99</p>
             </div>
-            <div className="col">
-            <img src="https://th.bing.com/th/id/OIP.T61kA6G-YyOAF0U30QaJZgHaE8?w=258&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                alt="">
-            </img>
-            <h3>Cheese Burger</h3>
-            <p>$79.00</p>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img
+                src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/biryani-recipe-2.jpg"
+                alt="Indian Food 3"
+                className="menu-image"
+              />
+              <h3>Veg Biryani</h3>
+              <p>$12.99</p>
             </div>
-            <div className="col">
-            <img src="https://th.bing.com/th/id/OIP.STDLBK_BpBD-_29gxKA5cQHaLG?pid=ImgDet&rs=1" 
-                                alt="" height="300px">
-            </img>
-            <h3>Veg Burger</h3>
-            <p>$79.00</p>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img
+                src="https://static.toiimg.com/thumb/54289752.cms?width=800&height=800&imgsize=495844"
+                alt="Indian Food 4"
+                className="menu-image"
+              />
+              <h3>Masala Dosa</h3>
+              <p>$9.99</p>
             </div>
-    </div>
-    </div>
-    
+          </div>
+        </div>
+      </div>
+      <style>
+        {`
+          /* Internal CSS */
+          .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+
+          .menu-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+          }
+        `}
+      </style>
     </>
   );
 };
